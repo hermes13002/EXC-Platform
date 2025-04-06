@@ -149,3 +149,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # Using ObjectIdAutoField for MongoDB because MongoDB is not compatible with BigAutoField
 # DEFAULT_AUTO_FIELD = "django_mongodb_backend.fields.ObjectIdAutoField"
+
+
+pusher_app_id = config('PUSHER_APP_ID')
+pusher_key = config('PUSHER_KEY')
+pusher_secret = config('PUSHER_SECRET')
+pusher_cluster = config('PUSHER_CLUSTER')
